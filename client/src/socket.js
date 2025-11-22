@@ -2,7 +2,7 @@ import { io } from 'socket.io-client';
 
 // For local development, use localhost
 // For production, use your deployed server URL
-const SOCKET_URL = process.env.REACT_APP_SOCKET_URL || 'http://localhost:5000';
+const SOCKET_URL = process.env.REACT_APP_SOCKET_URL || 'https://brain-blast-server.onrender.com';
 
 export const socket = io(SOCKET_URL, {
   autoConnect: false,
