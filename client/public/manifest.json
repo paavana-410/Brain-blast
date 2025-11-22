@@ -1,0 +1,8 @@
+{
+  "short_name": "Brain Blast",
+  "name": "Brain Blast Quiz Game",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#6366f1",
+  "background_color": "#0f0f1a"
+}
