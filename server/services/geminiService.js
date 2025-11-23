@@ -45,4 +45,12 @@ async function generateQuestions(topic, difficulty, count = 20) {
 }
 
 function generateFallbackQuestions(topic, count) {
-  return Array
+  return Array.from({ length: count }, (_, i) => ({
+    question: `Sample question ${i + 1} about ${topic}?`,
+    options: ['A) Option 1', 'B) Option 2', 'C) Option 3', 'D) Option 4'],
+    correctAnswer: 'A) Option 1',
+    explanation: 'This is a fallback question.'
+  }));
+}
+
+module.exports = { generateQuestions };
