@@ -1,5 +1,5 @@
  const Game = require('../models/Game');
-const { generateQuestions } = require('../services/geminiService');
+const { generateQuestions } = require('../services/aiService');
 
 const generateRoomCode = () => Math.random().toString(36).substring(2, 8).toUpperCase();
 
